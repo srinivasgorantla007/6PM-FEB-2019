@@ -1,0 +1,85 @@
+Paragraph :
+
+ in HTML paragraphs are creting with  p  tag
+
+ Paragraph :
+
+ in HTML paragraphs are creating with  p  tag
+
+ syn :
+  <p> text ...</p>
+ Note : by default paragraph occupy full with of the page
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>paragraph</title>
+	<style type="text/css">
+		p{background-color: green;
+		   color:white;
+		    text-align: center;}
+	</style>
+</head>
+<body>
+
+<p> Hello HTML Developers</p>
+
+</body>
+</html>
+
+
+https://github.com/srinivasgorantla007/6PM-FEB-2019
+
+Headings  :  in HTML heading are using for create headings 
+
+ headings are by default in bold style 
+ heading are available from 
+   h1….h6 in different font size.
+
+   Span tag:  span is a text container or text holder
+
+ Hello <span>UI</span> Development 
+
+<body>
+ Hello <span style="color: green; background-color: yellow;">UI</span> Development
+</body>
+
+div tag : 
+div is tag using for holding for html elements .
+
+ <div>     1  section
+ …………….
+</div> 
+
+ <div>     2  section
+ …………….
+</div> 
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Div Tag</title>
+   <style type="text/css">
+   	div{background-color: gray; height: 50px;}
+   </style>
+</head>
+<body>
+<div style="color: orange"> Hello UI Development</div><br>
+<div style="color: green"> Hello HTML Development</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
