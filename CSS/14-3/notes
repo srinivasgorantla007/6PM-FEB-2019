@@ -1,0 +1,12 @@
+CSS -text-indent:
+The text-indent property specifies the indentation of the first line in a text-block.
+
+Note: Negative values are allowed.
+
+The first line will be indented to the left if the value is negative.
+p {
+    text-indent: 50px;
+}
+p {
+    text-indent: -50px;
+}
