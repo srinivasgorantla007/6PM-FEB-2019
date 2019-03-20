@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS-Selectors</title>
+	<style type="text/css">
+/*	   adjacant one sibling selector 
+
+*/		
+div + p{ background-color: lightblue; }
+		div{border: 3px solid black;}
+/*		Adjacent Sibling Selector
+*//*Selecting All <p> tag after <div> */
+div~p{background-color:yellow;}
+   p[width='100px'] { border: 4px solid green; }	
+   p[title~="html"] { background-color: blue; }
+	</style>
+</head>
+<body>
+<div>
+	<p width="100px" title="html is My Course"> Hello CSS</p>
+	<p> Hello CSS</p>
+</div>
+    <p width="100px" title="CSS is My Course"> Hello CSS</p>
+	<p width="200px" title="html is My Course"> Hello CSS</p>
+	<h3> Hello CSS</h3>
+    <p width="100px"> Hello CSS</p>
+
+</body>
+</html>

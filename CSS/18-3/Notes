@@ -1,0 +1,120 @@
+Style loading process in HTML :
+
+ HTML Can able to load three type of styles 
+  1. inline style  : element specific 
+  2. internal style : document specific 
+  3. external style  : application specific
+
+  inline style :   
+      inline styles are written from style attribute 
+       syn :
+       < elementname style="value1,value2,value3" >
+   interal style :
+       internal styles are written from style tag.
+       <style> 
+            selector 1
+            selector 2
+            selector 3
+       </style>
+     i can able to write my style tag anywhere in the html
+    head section or body section 
+    commonly people will do write internal styles in head
+    section.
+    Styles and HTML Combindly will execute in browser 
+    Styles+  HTML  = Browser 
+
+    inline   color:red    
+    1.internal  color:green  
+    2.external  color :blue  
+
+     browser ->  internal ,external , inline 
+
+    inline   color:red    
+   1. external  color :blue  
+   2. internal  color:green  
+
+    browser -> external -> internal -> inline 
+
+  selector :  inline ,, id,,class,, tag 
+
+  1. Create a table with tag seelctors , class Selector and Id Selector 
+
+  table 
+  2 rows 
+  2 tds 
+
+Note : most of the case stylesheet we can use class selector 
+           most of case javascript we can use id selector
+
+Grouping Selectors
+
+If you have elements with the same style definitions, like this:
+
+h1, h2, p {
+    text-align: center;
+}
+
+To group selectors, separate each selector with a comma.           
+
+<style type="text/css">
+		h3,p{ background-color: yellow; }
+		p{text-align: center;}
+	</style>
+
+	<html>
+	p
+	p
+	p
+	h3
+	h3
+	</html>
+
+	CompoundSelector :
+
+		 selecting only <p> tags that have class="class2” 
+
+      p.class2{   }
+
+   <title>compound Selector</title>
+	<style type="text/css">
+	p.para{ background-color: yellow; }
+	p.para1{background-color: lightblue;}
+	</style>
+	<html>
+	 p : class(para)
+	 p: class(para1)
+	 p : class(para)
+	 p: class(para1)
+	</html>
+
+Child Selector
+/* Selecting <p> which are children of <div> */
+
+div  p { background-color: skyblue; }
+
+<html>
+  <div> <p><p> </div>
+   <p>
+   <p>
+</html>
+
+
+Direct Child selector
+/*excluding grand children */
+
+div > p {  background-color: skyblue; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
