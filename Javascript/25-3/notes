@@ -1,0 +1,52 @@
+Javascript :
+Webpage : collection of web components.
+
+Website : Collection of webpages is called  website  which can contain some information. 
+
+WWW : world wide web
+www.amazon.com
+www.facebook.com
+www.flipkart.com
+HTML CSS and Javascript 
+
+javascript is a functional part of web page 
+1. searching
+2. input
+3. request 
+4. response 
+5. click 
+6.mouse operation
+7.Sliders 
+8.Animations 
+9.handle HTML 
+10.handle CSS 
+11.Data manuplations 
+
+How to Create Javascript File :
+
+1. internal scripts 
+2. external scripts 
+
+1. internal script:  
+   internal script is creating from script tag
+   <script >
+      javascript code 
+   </script>
+
+2. External Script : 
+    External scripts are creating from
+    fileName.js format    
+
+loading Javascript :
+    1.  if  i load javascript in head tag  script will load first 
+         js will load next 
+
+    2. if i load javascript in end of the body html will load first then javascript will load next.
+        
+        Secon process is always prefered . 
+
+
+
+
+
+
