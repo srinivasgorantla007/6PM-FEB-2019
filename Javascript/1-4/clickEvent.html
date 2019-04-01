@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ClickEvent</title>
+	<style type="text/css">
+		button{ background-color: red; color: white; padding: 5px; border-radius: 5px; }
+	</style>
+</head>
+<body>
+	<button id="btn">Click Me</button>
+<script type="text/javascript">
+	 // getting button from html injecting click evnt 
+	document.getElementById("btn").addEventListener("click",myFun)
+	// dec event handler 
+	  function myFun()
+	  {
+	  	alert("button clicked")
+	  document.getElementById("btn").innerHTML="Clicked"
+	  document.getElementById("btn").style.backgroundColor="blue";
+
+	  }
+
+</script>
+</body>
+</html>

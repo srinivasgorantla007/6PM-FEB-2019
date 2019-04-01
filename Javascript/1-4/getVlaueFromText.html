@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Get Value From textInput</title>
+	<style type="text/css">
+		button{ background-color: red; color: white; padding: 5px; border-radius: 5px; }
+	</style>
+</head>
+<body>
+<input type="text" name="fname" placeholder="Entername" id="txt">
+<button id="btn">getValue</button>
+<br>
+<span id="spanEle"></span>
+<script type="text/javascript">
+	 // getting button from html injecting click evnt 
+	document.getElementById("btn").addEventListener("click",myFun)
+	// dec event handler 
+	  function myFun()
+	  {
+	  	// getting value and storing in variable 
+   var getVal=document.getElementById("txt").value
+      // add text to span
+      document.getElementById("spanEle").innerHTML=getVal
+      document.getElementById("txt").value=""
+	  }
+</script>
+</body>
+</html>
