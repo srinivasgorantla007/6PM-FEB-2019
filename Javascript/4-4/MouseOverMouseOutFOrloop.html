@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forloop MouseEvents</title>
+</head>
+<body>
+
+<p>Hello JS</p>
+<p>Hello JS</p>
+<p>Hello JS</p>
+<p>Hello JS</p>
+<p>Hello JS</p>
+
+<script type="text/javascript">
+	 var count = document.getElementsByTagName('p').length;
+	 alert(count)
+	 document.write("<br>")
+for (var i = 0; i < document.getElementsByTagName('p').length; i++){
+
+	document.getElementsByTagName('p')[i].addEventListener("mouseover",fun)
+		function fun()
+		{
+			this.style.color="red"
+			this.style.backgroundColor="yellow"
+			this.style.fontStyle="italic"
+			this.style.textAlign="center"
+
+		}
+	document.getElementsByTagName('p')[i].addEventListener("mouseout",fun1)
+		function fun1()
+		{
+			this.style.color=""
+			this.style.backgroundColor=""
+			this.style.fontStyle=""
+			this.style.textAlign=""
+		}
+			
+	}
+</script>
+
+</body>
+</html>

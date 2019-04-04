@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>keypress</title>
+</head>
+<body>
+	<input type="text" name="" id="uName" placeholder="Name">
+	<span id="spn"></span>
+
+<script type="text/javascript">
+	document.getElementById("uName").addEventListener("keypress",fun)
+	function fun()
+	{
+		var a = document.getElementById("uName").value
+		document.getElementById("spn").innerHTML=a;
+	}
+</script>
+</body>
+</html>

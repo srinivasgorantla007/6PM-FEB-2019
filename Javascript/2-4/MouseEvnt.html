@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mouse Events</title>
+</head>
+<body>
+<p style="background-color: red; height: 50px; "> Hello Javascript </p>
+
+<script type="text/javascript">
+	document.getElementsByTagName("p")[0].addEventListener("mouseover",fun1);
+	document.getElementsByTagName("p")[0].addEventListener("mouseout",fun2);
+	function fun1(){
+	 document.getElementsByTagName("p")[0].style.backgroundColor="yellow";
+	}
+	function fun2(){
+	 document.getElementsByTagName("p")[0].style.backgroundColor="red";
+	}
+
+</script>
+</body>
+</html>
