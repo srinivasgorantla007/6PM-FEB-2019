@@ -1,0 +1,30 @@
+<style type="text/css">
+	table{border:4px solid green; width: 100%;}
+	 tr ,td { border: 2px solid black; }
+	 tr:first{font-style: bold}
+	 td{text-align: left; width: 33%}
+</style>
+<script type="text/javascript">
+
+	var emps=[{ "id" : 1001,"name" :"srikanth", "qual":"MCA"},
+	                  { "id" : 1002,"name" :"Srinivas", "qual":"Btech"},
+	                  { "id" : 1003,"name" :"Srinath", "qual":"BA"},
+	                  { "id" : 1001,"name" :"srikanth", "qual":"MCA"},
+	                  { "id" : 1002,"name" :"Srinivas", "qual":"Btech"},
+	                  { "id" : 1003,"name" :"Srinath", "qual":"BA"}]
+
+   //document.write(emps.length);
+    for (var i = 0; i < emps.length; i++) {
+    	// document.write(emps[i].id);
+    	// document.write("<br>");
+    	// document.write(emps[i].name);
+    	// document.write("<br>");
+    	// document.write(emps[i].qual);
+    	// document.write("<br>");
+    	// document.write(emps[i].id);
+    	// document.write("<hr>");
+    	document.write("<table><tr><td>"+emps[i].id+"</td><td>"+emps[i].name+"</td><td>"+emps[i].qual+"</td></tr></table>")
+    }
+    // document.write(emps[i])
+ 
+</script>

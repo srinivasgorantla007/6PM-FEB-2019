@@ -1,0 +1,13 @@
+Array : 
+
+  in javascriopt array declared with 
+   [ ]
+
+   var Devices=["iPhone","iPad","iPod","nexus"]
+
+   document.write(Devices[0]);
+   document.write(Devices[1]);
+   document.write(Devices[2]);
+   document.write(Devices[3]);
+
+   for
