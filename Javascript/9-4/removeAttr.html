@@ -1,0 +1,11 @@
+<img src="2.png" width="100px;" height="100px" title="MyImage">
+<button>removeAttr</button>
+
+<script type="text/javascript">
+	document.getElementsByTagName("button")[0].addEventListener("click",fun)
+	 function fun()
+	 {
+	 	alert("title removed")
+	 	document.getElementsByTagName("img")[0].removeAttribute("title");
+	 }
+</script>

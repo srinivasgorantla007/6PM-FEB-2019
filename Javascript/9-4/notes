@@ -1,0 +1,9 @@
+setAttribute :
+
+  setting html attribute from javascript 
+
+  syn :
+   document.getElementById("selector").setAttribute("name", "value");
+ ex :
+ document.getElementById("myimage").setAttribute("src", "img2.jpg");
+  

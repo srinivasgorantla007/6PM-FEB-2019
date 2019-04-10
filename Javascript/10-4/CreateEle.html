@@ -1,0 +1,26 @@
+         <style type="text/css">
+         	div{ background-color: orange; padding: 10px; }
+         	p{ background-color: yellow; }
+         </style>
+         <div id="div1">	
+			<p>para 1</p>
+			<p>para 2</p>
+			<p>para 3</p>
+		</div>
+		<input type="button" id="btn1" value="add para to div">
+
+		<script type="text/javascript">
+
+			document.getElementById("btn1").addEventListener("click", fun1);
+			var n = 4;
+			function fun1()
+			{
+				 //1.create an element
+				var mypara = document.createElement("p");
+				// inner html for para
+				mypara.innerHTML = "para " + n;
+				// add para for DIV
+                document.getElementById("div1").appendChild(mypara);
+				n++;
+			}			
+     </script>

@@ -1,0 +1,24 @@
+
+<body>
+	 <style type="text/css">
+         	div{ background-color: orange; padding: 10px; }
+         	p{ background-color: yellow; }
+         	#p2{background-color: white; color: black}
+         </style>
+		<div>	
+			<p>para 1</p>
+			<p id="p2">para 2</p>
+			<p>para 3</p>
+		</div>
+		
+		<input type="button" id="btn1" value="remove para 2">
+
+		<script type="text/javascript">
+			document.getElementById("btn1").addEventListener("click", fun1);
+
+			function fun1()
+			{
+	       document.getElementById("p2").remove();
+			}
+		</script>
+	</body>

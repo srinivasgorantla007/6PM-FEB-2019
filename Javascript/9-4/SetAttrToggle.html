@@ -1,0 +1,20 @@
+<img src="2.png" width="100px;" height="100px">
+
+<script type="text/javascript">
+	document.getElementsByTagName("img")[0].addEventListener("mouseover",fun)
+	 function fun()
+	 {
+	 	document.getElementsByTagName("img")[0].setAttribute("src","3.png");
+	 	document.getElementsByTagName("img")[0].setAttribute("width","150px");
+	   document.getElementsByTagName("img")[0].setAttribute("height","150px");
+
+	 }
+	 document.getElementsByTagName("img")[0].addEventListener("mouseout",fun1)
+	 function fun1()
+	 {
+	 	document.getElementsByTagName("img")[0].setAttribute("src","2.png");
+	 	document.getElementsByTagName("img")[0].setAttribute("width","100px");
+	   document.getElementsByTagName("img")[0].setAttribute("height","100px");
+
+	 }
+</script>
