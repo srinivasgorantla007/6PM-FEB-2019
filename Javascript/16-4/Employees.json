@@ -1,0 +1,20 @@
+[
+ { 
+ 	"name" : "srinivas",
+     "age" : 32,
+      "Qual" :"MCA",
+      "Graduated": true
+  },
+ { 
+ 	"name" : "Srinath",
+     "age" : 31,
+      "Qual" :"MBA",
+      "Graduated": true
+  },
+ { 
+ 	"name" : "Sridhar",
+     "age" : 22,
+      "Qual" :"SSC",
+      "Graduated": false
+  }
+]

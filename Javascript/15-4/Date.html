@@ -1,0 +1,41 @@
+<script type="text/javascript">
+
+	var d=new Date()
+	document.write("sys fulldate is::" + d)
+	document.write("<br>")
+	var s = d.toLocaleDateString();
+	document.write("only date :: " + s );
+	document.write("<br>")
+	var s = d.toLocaleTimeString();
+	document.write("only time :: " + s );
+	document.write("<br>")
+	var n = d.getTime();
+	document.write("only time in millisecondds :: " + n );
+    document.write("<br>")
+	var n = d.getDay();
+	document.write("only day :: " + n );  // sunday is 0  0---6
+    document.write("<br>")
+
+	var days=["Sunday","Monday","Tus","wed","thu","fri","sat"]
+		document.write("only day :: " +days[n] );  // sunday is 0  0---6
+
+	document.write("<br>")
+	var n = d.getDate(); 
+	document.write("only Date :: " + n );
+
+	document.write("<br>")
+	var s = d.getMonth();
+			document.write("Current month is" + " " + s); //0---11
+
+var monthNames = ["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+];
+
+document.write("</br>")
+var d = new Date();
+document.write("The current month is " + monthNames[d.getMonth()]);			
+
+
+
+
+</script>

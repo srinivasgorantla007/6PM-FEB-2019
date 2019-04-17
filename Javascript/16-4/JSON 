@@ -1,0 +1,80 @@
+JSON : 
+
+JSON means Javascript Object Notation
+Strore and transport data between client and server.
+
+client (browser JS) --- > JSON.stringify() --- > JSON 
+JSON   ----->   JSON.parse() ---->  client(browser JS)
+
+JSON is simple
+JSON is human and machine readable 
+JSON is lightweight
+JSON is langauge independent 
+JSON is universal format.
+we can store and transport data bw client and server 
+
+ JSON available in two different formats.
+
+ 1. Array   (JSONArray) [ ]
+ 2. Object  (JSONObject) { }
+
+ if we want to convert javascript to json   we need to use JSON.Stringify() method 
+
+ if we want to convert JSON to javascript we need to use JSON.parse() method
+
+JSON Object : { }
+
+ { "name" : "srinivas",
+     "age" : 32,
+      "Qual" :"MCA",
+      "Graduated": true
+  }
+
+rules of JSON Object:
+  1. Object starts with { close with }
+  2. key must be a string 
+  3. value can be any datatype 
+   (int,float,char,bool,string,null)
+  4. key and value separated with colon.
+  5. every key-value pair separated with comma 
+  6. last key-value pair doesnot have comma
+
+  Note : JSON file saved as .json format  
+
+rules of JSON Array :
+1. JSON Array starts with [ ends with ]
+2. JSON Array is a collection of  values 
+3. value can be any datatype
+4. values are separated with comma 
+5. last value doenot have comma 
+
+JSON validation:
+
+    https://jsoncompare.com/#!/simple/
+
+    copy and paste json here  and click on lint button 
+     if any error came it will not compile 
+     if JSON is right json it will do validate 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

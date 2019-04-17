@@ -1,0 +1,7 @@
+ Emp.json
+ { 
+ 	  "name" : "srinivas",
+      "age" : 32,
+      "Qual" :"MCA",
+      "Graduated": true
+  }
