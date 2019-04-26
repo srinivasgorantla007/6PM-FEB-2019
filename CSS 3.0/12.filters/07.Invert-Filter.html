@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Example of CSS3 Invert Filter Effect</title>
+<style type="text/css">
+img.partially-inverted {
+    -webkit-filter: invert(80%); /* Chrome, Safari, Opera */
+    filter: invert(80%);
+}
+img.fully-inverted {
+    -webkit-filter: invert(100%); /* Chrome, Safari, Opera */
+    filter: invert(100%);
+}
+/* Some CSS to beautify this example */
+table td{
+    padding: 10px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <img src="../images/flower3.jpg" alt="Parrot">
+            </td>
+             <td>
+                <img class="partially-inverted" src="../images/flower3.jpg" alt="Parrot">
+            </td>
+            <td>
+                <img class="fully-inverted" src="../images/flower3.jpg" alt="Parrot">
+            </td>
+        </tr>
+        <tr>
+            <td>Original Image</td>
+            <td>invert(80%)</td> 
+            <td>invert(100%)</td>
+        </tr>
+    </table>
+</body>
+</html>                                		

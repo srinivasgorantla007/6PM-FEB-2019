@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>CSS 3 - Transformations - Image Gallery</title>
+        <style type="text/css">
+         div {
+         	text-align: center;
+         }
+         img{
+         	margin-bottom: 5px;
+         }
+        	span
+        	{
+        		color: white;
+        		text-align: center;
+        		font-style: italic;
+        	}
+        </style>
+	</head>
+	<body>
+	
+		<div class="photogallery">
+			<img src="../images/img1.jpg">
+			<span>image 1</span>
+		</div>
+		
+		<div class="photogallery">
+			<img src="../images/img2.jpg">
+			<span>image 2</span>
+		</div>
+		
+		<div class="photogallery">
+			<img src="../images/img3.jpg">
+			<span>image 3</span>
+		</div>
+		
+		<div class="photogallery">
+			<img src="../images/img4.jpg">
+			<span>image 4</span>
+		</div>
+		
+		<div class="photogallery">
+			<img src="../images/img5.jpg">
+			<span>image 5</span>
+		</div>
+		
+		<div class="photogallery">
+			<img src="../images/img6.jpg">
+			<span>image 6</span>
+		</div>
+
+        <style type="text/css">
+			body
+			{
+				font-family: 'Segoe UI';
+				font-size: 25px;
+			}
+
+            .photogallery
+			{
+                width: 200px;
+                height: 190px;
+                background-color: #00CCFF;
+                margin: 50px;
+                float: left;
+                cursor: pointer;
+                box-shadow: 10px 10px 10px 10px #ff0000;
+                -moz-box-shadow: 10px 10px 10px 10px #ff0000;
+                -webkit-box-shadow: 10px 10px 10px 10px #ff0000;
+
+                transition: transform 0.8s;
+                -moz-transition: -moz-transform 0.8s;
+                -webkit-transition: -webkit-transform 0.8s;
+            }
+
+            div:hover 
+			{
+                background-color: #0099FF;
+
+                transform:  scale(1.2);
+                -moz-transform:  scale(1.2);
+                -webkit-transform:  scale(1.2);
+            }
+
+            img 
+			{
+                width: 100%;
+            }
+        </style>		
+	</body>	
+</html>

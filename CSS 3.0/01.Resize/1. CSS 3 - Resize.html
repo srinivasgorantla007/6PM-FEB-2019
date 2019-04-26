@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>CSS 3 - Resize</title>
+		<style>
+			body
+			{
+				font-family: 'Segoe UI';
+				font-size: 23px;
+			}
+			.root
+			{
+				resize: vertical;
+			}
+			div
+			{
+				border: 2px solid;
+				padding: 10px 40px; 
+				width: 500px;
+				font-family: 'Segoe UI';
+				resize: inherit; 
+				/*Options: none | both | horizontal | vertical */
+				overflow: auto;
+			}
+		</style>
+	</head>
+	<body>
+<div class="root">
+		<div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+		</div>
+	</body>
+</html>

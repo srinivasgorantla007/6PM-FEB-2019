@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Example of CSS3 Hue-rotate Filter Effect</title>
+<style type="text/css">
+img.hue-normal {
+    -webkit-filter: hue-rotate(150deg); /* Chrome, Safari, Opera */
+    filter: hue-rotate(150deg);
+}
+img.hue-wrap {
+    -webkit-filter: hue-rotate(480deg); /* Chrome, Safari, Opera */
+    filter: hue-rotate(480deg);
+}
+/* Some CSS to beautify this example */
+table td{
+    padding: 10px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <img src="../images/flower3.jpg" alt="Parrot">
+            </td>
+             <td>
+                <img class="hue-normal" src="../images/flower3.jpg" alt="Parrot">
+            </td>
+            <td>
+                <img class="hue-wrap" src="../images/flower3.jpg" alt="Parrot">
+            </td>
+        </tr>
+        <tr>
+            <td>Original Image</td>
+            <td>hue-rotate(150deg)</td> 
+            <td>hue-rotate(480deg)</td>
+        </tr>
+    </table>
+</body>
+</html>                                		

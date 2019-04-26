@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>CSS 3 - Transformations - Transform Origin</title>
+	</head>
+    <body>
+
+		<h3>CSS 3 Transformations - Transform Origin</h3>
+	
+	    <div class="div1">Hello</div>
+
+        <style type="text/css">
+			body
+			{
+				font-family: 'Segoe UI';
+				font-size: 25px;
+			}
+
+            div 
+			{
+                width: 200px;
+                height: 200px;
+                background-color: #00CCFF;
+                margin-left: 150px;
+				margin-top: 100px;
+                cursor: pointer;
+                box-shadow: 10px 10px 10px 10px #ff0000;
+                -moz-box-shadow: 10px 10px 10px 10px #ff0000;
+                -webkit-box-shadow: 10px 10px 10px 10px #ff0000;
+            }
+
+            .div1:hover 
+			{
+                background-color: #0099FF;
+                transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+
+                transform-origin: top right;
+                -moz-transform-origin: top right;
+                -webkit-transform-origin: top right ;
+            }
+        </style>		
+    </body>	
+</html>

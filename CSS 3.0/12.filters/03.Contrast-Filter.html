@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Example of CSS3 Contrast Filter Effect</title>
+<style type="text/css">
+img.bright {
+    -webkit-filter: contrast(200%); /* Chrome, Safari, Opera */
+    filter: contrast(200%);
+}
+img.dim {
+    -webkit-filter: contrast(50%); /* Chrome, Safari, Opera */
+    filter: contrast(50%);
+}
+/* Some CSS to beautify this example */
+table td{
+    padding: 10px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <img src="../images/flower3.jpg" alt="Apple">
+            </td>
+             <td>
+                <img class="dim" src="../images/flower3.jpg" alt="Apple">
+            </td>
+            <td>
+                <img class="bright" src="../images/flower3.jpg" alt="Apple">
+            </td>
+        </tr>
+        <tr>
+            <td>Original Image</td>
+            <td>contrast(50%)</td> 
+            <td>contrast(200%)</td>
+        </tr>
+    </table>
+</body>
+</html>                                		

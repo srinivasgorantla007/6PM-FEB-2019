@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS 3 - Animations - Position</title>
+		<style type="text/css">
+			body
+			{
+				font-family: 'Segoe UI';
+				font-size: 23px;
+			}
+			div
+			{
+				width: 200px;
+				height: 200px;
+				background-color: red;
+				
+				position: absolute;
+				
+				animation: myfirst 5s;
+				-moz-animation: myfirst 5s; /* Firefox */
+				-webkit-animation: myfirst 5s; /* Safari and Chrome */
+				-o-animation: myfirst 5s; /* Opera */
+			}
+
+			@keyframes myfirst
+			{
+				0%   { background: red; left: 0px; top: 0px;}
+				25%  { background: yellow; left: 200px; top: 0px;}
+				50%  { background: blue; left: 200px; top: 200px;}
+				75%  { background: green; left: 0px; top: 200px;}
+				100% { background: red; left: 0px; top: 0px;}
+			}
+
+			@-moz-keyframes myfirst /* Firefox */
+			{
+				0%   {background: red; left: 0px; top: 0px;}
+				25%  {background: yellow; left: 200px; top: 0px;}
+				50%  {background: blue; left: 200px; top: 200px;}
+				75%  {background: green; left: 0px; top: 200px;}
+				100% {background: red; left: 0px; top: 0px;}
+			}
+
+			@-webkit-keyframes myfirst /* Safari and Chrome */
+			{
+				0%   {background: red; left: 0px; top: 0px;}
+				25%  {background: yellow; left: 200px; top: 0px;}
+				50%  {background: blue; left: 200px; top: 200px;}
+				75%  {background: green; left: 0px; top: 200px;}
+				100% {background: red; left: 0px; top: 0px;}
+			}
+
+			@-o-keyframes myfirst /* Opera */
+			{
+				0%   {background: red; left: 0px; top: 0px;}
+				25%  {background: yellow; left: 200px; top: 0px;}
+				50%  {background: blue; left: 200px; top: 200px;}
+				75%  {background: green; left: 0px; top: 200px;}
+				100% {background: red; left: 0px; top: 0px;}
+			}
+		
+		</style>
+	</head>
+	<body>
+
+		<div></div>
+
+	</body>	
+</html>

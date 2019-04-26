@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>CSS 3 - Transitions - Width</title>
+	</head>
+	<body>
+		<h1>Transitions - Changing width (css property) gradually</h1>
+
+		<div>Contrary to popular belief, Lorem Ipsum is not simply random text.</div>
+
+		<style>
+			body
+			{
+				font-family: 'Segoe UI';
+				font-size: 23px;
+			}
+			div
+			{
+				width: 300px;
+				height: 100px;
+				background-color: darkred;
+				color: yellow;
+
+				  transition: width 1s; /*IE 9+ and Firefox 4+ */
+				-moz-transition: width 1s; /* Firefox 3 or older */
+				-webkit-transition: width 1s; /* Safari and Chrome */
+				-o-transition: width 1s; /* Opera */
+			}
+			div:hover
+			{
+				width: 600px;
+			}
+		</style>
+	</body>	
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>CSS 3 - Multiple Columns</title>
+	</head>
+	<body>
+
+		<div class="newspaper1">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. </div>
+		<br>
+
+	    <div class="newspaper2">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.  </div>
+
+        <style>
+			body
+			{
+				font-family: 'Segoe UI';
+				font-size: 23px;
+			}
+            .newspaper1
+			{
+				text-align: justify;
+				border: 1px solid gray;
+            }
+			.newspaper2
+			{
+				text-align: justify;
+				border: 1px solid gray;
+
+                column-count: 3;  /* IE9+ */
+                -moz-column-count: 3; /* Firefox */
+                -webkit-column-count: 3; /* Safari and Chrome */
+                -o-column-count: 3; /* opera */
+
+                column-gap: 20px; /* IE9+ */
+                -moz-column-gap:  20px; /* Firefox */
+                -webkit-column-gap:  20px; /* Safari and Chrome */
+                -o-column-gap:  20px; /* opera*/
+
+
+            }
+        </style>
+	</body>
+</html>

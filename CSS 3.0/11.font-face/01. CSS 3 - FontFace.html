@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS 3 - FontFace</title>
+		<style> 
+			body
+			{
+				font-family: 'Segoe UI';
+				font-size: 50px;
+			}
+			@font-face
+			{
+				    font-family: first;
+				    src: url('fonts/Pacifico.ttf'),url('fonts/Pacifico.woff') format('woff'),url('fonts/Pacifico.eot'); /* IE9+ */
+			}
+			@font-face
+			{
+				font-family: second;
+				src: url('fonts/always forever.ttf'),
+					url('fonts/always forever.woff') 
+					format('woff'),
+					url('fonts/always forever.eot'); /* IE9+ */
+			}
+			@font-face
+			{
+				font-family: third;
+				src: url('fonts/Beyond Wonderland.ttf'),
+					url('fonts/fofbb_ital.woff') 
+					format('woff'),
+					url('fonts/fofbb_ital.eot'); /* IE9+ */
+			}
+			div.first
+			{
+				font-family: first;
+			}
+			div.second
+			{
+				font-family: second;
+			}
+			div.first
+			{
+				font-family: third;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="first">With CSS3, websites can finally use new and attrative fonts.</div>
+		<div class="second">With CSS3, websites can finally use new and attrative fonts.</div>
+		<div class="third">With CSS3, websites can finally use new and attrative fonts.</div>
+	</body>
+</html>

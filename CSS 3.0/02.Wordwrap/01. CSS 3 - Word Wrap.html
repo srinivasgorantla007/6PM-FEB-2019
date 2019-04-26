@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>CSS 3 - Word Wrap</title>
+        <style>
+			body
+			{
+				font-family: 'Segoe UI';
+				font-size: 23px;
+			}
+            p.test1 
+			{
+                width: 200px;
+                border: 1px solid #000000;
+            }
+			p.test2 
+			{
+                width: 200px;
+                border: 1px solid #000000;
+                word-wrap: break-word;
+            }
+            span
+            {
+            	color: red;
+            }
+        </style>
+	</head>
+
+	<body>
+
+		<p class="test1">This paragraph contains a very long word: <span>thisisaveryveryveryveryveryverylongword</span>. The long word will break and wrap to the next line.This paragraph contains a very long word: <span>thisisaveryveryveryveryveryverylongword.</span> The long word will break and wrap to the next line.T</p>
+
+		<p class="test2">This paragraph contains a very long word: <span>thisisaveryveryveryveryveryverylongword.</span> The long word will break and wrap to the next line.This paragraph contains a very long word: M<span>thisisaveryveryveryveryveryverylongword.</span> .</p>
+
+	</body>
+</html>

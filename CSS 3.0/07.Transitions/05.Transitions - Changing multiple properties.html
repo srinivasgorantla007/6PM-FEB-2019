@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>CSS 3 - Transitions - Multiple Properties</title>
+	</head>
+	<body>
+		<div>hai</div>
+
+		<p>Hover over the div element above, to see the transition effect.</p>
+
+        <style>
+
+			body
+			{
+				font-family: 'Segoe UI';
+				font-size: 25px;
+			}
+            div
+			{
+                width: 100px;
+                height: 100px;
+                background-color: green;
+                position: relative;
+                color: yellow;
+                font-size: 25px;
+
+       transition: background-color 2s, font-size 1s, width 2s;
+        /* IE 9+ and Firefox 4+ */
+             -moz-transition: background-color 2s, font-size 1s, width 2s; /* Firefox 3 or older */
+                -webkit-transition: background-color 2s, font-size 1s, width 2s; /* Safari and Chrome */
+                -o-transition: background-color 2s, font-size 1s, width 2s; /* Opera */
+            }
+			div:hover
+			{
+				background-color: blue;
+				font-size: 50px;
+				width: 400px;
+			}
+        </style>
+	</body>
+</html>

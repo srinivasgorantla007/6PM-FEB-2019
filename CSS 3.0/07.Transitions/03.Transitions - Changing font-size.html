@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>CSS 3 - Transitions - Font-Size</title>
+	</head>
+	<body>
+		<h1>Changing font-size property gradually</h1>
+		<div>hai</div>
+
+        <style>
+			body
+			{
+				font-family: 'Segoe UI';
+			}
+            div
+			{
+                width: 200px;
+                height: 200px;
+                background-color: darkgreen;
+                position: relative;
+                color: yellow;
+				font-size: 30px;
+
+                transition: font-size 1s;
+                -moz-transition: font-size 1s; /* Firefox 4 */
+                -webkit-transition: font-size 1s; /* Safari and Chrome */
+                -o-transition: font-size 1s; /* Opera */
+            }
+			div:hover
+			{
+				font-size: 60px;
+			}
+        </style>
+	</body>
+</html>

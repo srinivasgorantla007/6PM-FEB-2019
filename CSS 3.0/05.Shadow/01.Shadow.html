@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>CSS 3 - Shadow</title>
+	</head>	
+	<body>
+
+		<div>CSS 3 shadow example</div>
+
+        <style>
+			body
+			{
+				font-family: 'Segoe UI';
+				font-size: 25px;
+			}
+            div 
+			{
+                width: 300px;
+                height: 100px;
+                background-color: yellow;
+
+				/* Syntax: box-shadow:
+                 horizontalPosition 
+                 verticalPosition
+                  blurRadius 
+                  spread
+                 shadowColor */
+                 box-shadow: 20px 10px 10px 5px green; /* IE 9+ and Firefox 4+ */
+                -moz-box-shadow: 20px 10px 10px 5px green; /* Firefox 1 to 3 */
+                -webkit-box-shadow: 20px 10px 10px 5px green; /* Chrome and Safari */
+                
+				/* Syntax: text-shadow:
+                 horizontalPosition
+                  verticalPosition 
+                  blurRadius 
+                  shadowColor */
+				text-shadow: 5px 5px 5px #FF0000;
+        
+            }
+        </style>
+	</body>
+</html>
+
+
+<!--
+Syntax of box-shadow:
+    Horizontal position: 35px
+    Vertical position: 20px
+    Blur Radius: 15px
+    Spread: 7px
+    Shadow color: rgba(r, g, b, a)
+-->
+
+<!--
+Syntax of text-shadow:
+    Horizontal Length: 35px
+    Vertical Length: 20px
+    Blur Radius: 15px
+    Shadow color: rgba(r, g, b, a)
+-->

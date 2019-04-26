@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>CSS 3 - Transitions - Height</title>
+	</head>
+	<body>
+
+		<h1>Transitions - Changing height (css property) gradually</h1>
+
+		<div>Contrary to popular belief, Lorem Ipsum is not simply random text.</div>
+
+		<style>
+			body
+			{
+				font-family: 'Segoe UI';
+				font-size: 23px;
+			}
+			div
+			{
+				width: 300px;
+				height: 100px;
+				background-color: darkred;
+				color: yellow;
+
+				transition: height 2s; /*IE 9+ and Firefox 4+ */
+				-moz-transition: height 2s; /* Firefox 3 or older */
+				-webkit-transition: height 2s; /* Safari and Chrome */
+				-o-transition: height 2s; /* Opera */
+			}
+			div:hover
+			{
+				height: 300px;
+			}
+		</style>
+	</body>	
+</html>

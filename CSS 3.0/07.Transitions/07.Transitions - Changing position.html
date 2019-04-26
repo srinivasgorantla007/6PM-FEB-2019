@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>CSS 3 - Transitions - Position</title>
+		<style>
+			body
+			{
+				font-family: 'Segoe UI';
+				font-size: 28px;
+			}
+            div
+			{
+                width: 200px;
+                height: 200px;
+                background-color: green;
+                color: yellow;
+                position: absolute;
+                left: 0px;
+                top: 0px;
+
+                transition: left 1.5s, top 1.5s;
+                -moz-transition: left 1.5s, top 1.5s; /* Firefox 4 */
+                -webkit-transition: left 1.5s, top 1.5s; /* Safari and Chrome */
+                -o-transition: left 1.5s, top 1.5s; /* Opera */
+            }
+
+			div:hover
+			{
+				left: 50px;
+				top: 50px;
+			}
+        </style>
+	</head>	
+	<body>
+		<div>hai</div>
+
+		<p>Hover over the div element above, to see the transition effect.</p>
+	</body>	
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Example of CSS3 Drop-shadow Filter Effect</title>
+<style type="text/css">
+img.shadow {
+    -webkit-filter: drop-shadow(2px 2px 4px orange); /* Chrome, Safari, Opera */
+    filter: drop-shadow(2px 2px 4px orange);
+}
+img.shadow-large {
+    -webkit-filter: drop-shadow(4px 4px 10px orange); /* Chrome, Safari, Opera */
+    filter: drop-shadow(4px 4px 10px orange);
+}
+/* Some CSS to beautify this example */
+table td{
+    padding: 10px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <img src="../images/flower3.jpg" alt="Apple">
+            </td>
+             <td>
+                <img class="shadow" img src="../images/flower3.jpg" alt="Apple">
+            </td>
+            <td>
+                <img class="shadow-large" src="../images/flower3.jpg" alt="Apple">
+        </tr>
+        <tr>
+            <td>Original Image</td>
+            <td>drop-shadow(2px 2px 4px orange)</td> 
+            <td>drop-shadow(4px 4px 10px orange)</td>
+        </tr>
+    </table>
+</body>
+</html>                                		

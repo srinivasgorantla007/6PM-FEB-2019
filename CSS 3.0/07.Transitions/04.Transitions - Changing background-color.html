@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS 3 - Transitions - Background Color</title>
+	</head>
+	<body>
+		<h1>Changing background-color</h1>	
+		<div>hai</div>
+
+        <style>
+			body
+			{
+				font-family: 'Segoe UI';
+				font-size: 23px;
+			}
+            div
+			{
+                width: 200px;
+                height: 200px;
+                background-color: green;
+                position: relative;
+                color: yellow;
+
+                transition: background-color 1.5s;
+                -moz-transition: background-color 1.5s; /* Firefox 4 */
+                -webkit-transition: background-color 1.5s; /* Safari and Chrome */
+                -o-transition: background-color 1.5s; /* Opera */
+            }
+			div:hover
+			{
+				background-color: blue;
+			}
+        </style>
+	</body>
+</html>

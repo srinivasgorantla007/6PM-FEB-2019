@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>CSS 3 - Border Radius</title>
+	</head>
+	<body>
+
+		<div>The border-radius property allows you to add rounded corners to elements.</div>
+		<style>
+			body
+			{
+				font-family: 'Segoe UI';
+				font-size: 23px;
+			}
+			div 
+			{
+				border: 2px solid #a1a1a1;
+				padding: 10px 40px;
+				background-color: pink;
+				width: 300px;
+
+				border-radius: 10px 30px; /* IE 9+ and Firefox 4+ */
+				-moz-border-radius: 10px 30px; /* Firefox 1, 2, 3*/
+				-webkit-border-radius: 10px 30px; /* Chrome and Safari */
+			}
+		</style>
+	</body>
+</html>

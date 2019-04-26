@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Example of CSS3 Grayscale Filter Effect</title>
+<style type="text/css">
+img.complete-gray {
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+}
+img.partial-gray {
+    -webkit-filter: grayscale(50%); /* Chrome, Safari, Opera */
+    filter: grayscale(50%);
+}
+/* Some CSS to beautify this example */
+table td{
+    padding: 10px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <img src="../images/flower3.jpg" alt="Apple">
+            </td>
+             <td>
+                <img class="partial-gray" src="../images/flower3.jpg" alt="Apple">
+            </td>
+            <td>
+                <img class="complete-gray" src="../images/flower3.jpg" alt="Apple">
+            </td>
+        </tr>
+        <tr>
+            <td>Original Image</td>
+            <td>grayscale(50%)</td> 
+            <td>grayscale(100%)</td>
+        </tr>
+    </table>
+</body>
+</html>                                		
