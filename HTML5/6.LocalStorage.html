@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Example of HTML5 Local Storage</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+// Check if the localStorage object exists
+if(localStorage){
+
+	$(document).ready(function(){
+		//jQuery EntryPoint
+		$(".save").click(function(){
+			//1. Get input name
+	var firstName = $("#firstName").val();
+			//2. Store data
+    localStorage.setItem("fname", firstName);
+			alert("Your first name is saved.");
+	});
+
+	$(".access").click(function(){
+			//3. Retrieve data
+    alert("Hi, " + localStorage.getItem("fname"));
+		});
+	});
+} 
+else{
+    alert("Sorry, your browser do not support local storage.");
+}
+
+
+</script>
+</head>
+<body>
+    <form>
+    	<label>First Name: <input type="text" id="firstName"></label>
+        <button type="button" class="save">Save Name</button>
+        <button type="button" class="access">Get Name</button>
+    </form>
+</body>
+</html>                                		

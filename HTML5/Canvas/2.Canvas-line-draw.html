@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Drawing a Line on Canvas</title>
+<style type="text/css">
+	canvas{
+		border: 1px solid #000;
+	}
+</style>
+<script type="text/javascript">
+    window.onload = function(){
+        // canvas ready
+        var canvas = document.getElementById("myCanvas");
+        var context = canvas.getContext("2d");
+
+        // draw line
+       context.moveTo(50, 60);
+       context.lineTo(50, 200);
+       // set line width
+       context.lineWidth = 5;
+      // set line color
+       context.strokeStyle = '#ff0000';
+
+
+       // draw line
+      context.moveTo(50, 60);
+      context.lineTo(250, 200);
+       // set line width
+       context.lineWidth = 2;
+      // set line color
+       context.strokeStyle = '#ff0000';
+       context.stroke();
+
+       
+
+
+
+    };
+</script>
+</head>
+<body>
+    <canvas id="myCanvas" width="300" height="200"></canvas>
+</body>
+</html>                                		

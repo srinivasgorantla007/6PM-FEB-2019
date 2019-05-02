@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Drawing a Circle on Canvas</title>
+<style type="text/css">
+	canvas{
+		border: 1px solid #000;
+	}
+</style>
+<script type="text/javascript">
+    window.onload = function(){
+        
+        var canvas = document.getElementById("myCanvas");
+        var context = canvas.getContext("2d");
+        context.arc(150, 100, 80, 0, 2 * Math.PI, false);
+        context.stroke();
+    };
+</script>
+</head>
+<body>
+    <canvas id="myCanvas" width="300" height="200"></canvas>
+</body>
+</html>                                		

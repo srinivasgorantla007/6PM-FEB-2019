@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Image to use:</p>
+<img id="myImg" src="../images/2.jpg" alt="The Scream" width="220" height="277">
+
+<p>Canvas to fill:</p>
+<canvas id="myCanvas" width="250" height="300"
+style="border:1px solid #d3d3d3;">
+
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<p><button onclick="myCanvas()">Try it</button></p>
+
+<script>
+function myCanvas() {
+	// get Canvas
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    //draw imgaes 
+    var img = document.getElementById("myImg");
+    ctx.drawImage(img,20,20);
+}
+</script>
+
+</body>
+</html>

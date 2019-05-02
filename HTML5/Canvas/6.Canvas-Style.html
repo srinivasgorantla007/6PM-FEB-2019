@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Example of Setting Stroke Color and Width</title>
+<style type="text/css">
+	canvas{
+		border: 1px solid #000;
+	}
+</style>
+<script type="text/javascript">
+    window.onload = function(){
+        var canvas = document.getElementById("myCanvas");
+        var context = canvas.getContext("2d");
+        //styles
+        context.lineWidth = 5;
+        context.strokeStyle = "orange";
+        context.moveTo(50, 150);
+        context.lineTo(350, 50);
+        context.stroke();
+    };
+</script>
+</head>
+<body>
+    <canvas id="myCanvas" width="490" height="200"></canvas>
+</body>
+</html>                                		

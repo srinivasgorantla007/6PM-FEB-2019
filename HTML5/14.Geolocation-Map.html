@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Example of Showing Geolocation on Google Map</title>
+
+<script type="text/javascript">
+
+    function showPosition(){
+        navigator.geolocation.getCurrentPosition(showMap);
+    }
+    
+    function showMap(position){
+        // Get location data
+        var latlong = position.coords.latitude + "," + position.coords.longitude;
+        
+        // Set Google map source url
+        var mapLink = "https://www.google.com/maps/place/"+ latlong+",17z/data=!3m1!4b1!4m5!3m4!1s0x3bcb90cf7fcfcea7:0x51e260d4d0f5d1d5!8m2!3d17.4370346!4d78.444465";
+        
+        // Create and insert Google map
+        document.getElementById("embedMap").innerHTML = "<img alt='Map Holder' src='"+ mapLink +"'>";
+    }
+</script>
+</head>
+<body>
+    <button type="button" onclick="showPosition();">Show My Position on Google Map</button>
+    <div id="embedMap">
+        <!--Google map will be embedded here-->
+    </div>
+</body>
+</html>                                		

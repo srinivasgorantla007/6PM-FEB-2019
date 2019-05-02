@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>HTML5  Input Types </title>
+
+<style type="text/css">
+
+    input[type="email"]:valid{
+        outline: 2px solid green;
+    }
+    input[type="email"]:invalid{
+        outline: 2px solid red;
+    }
+
+     input[type="number"]:valid{
+        outline: 2px solid green;
+    }
+    input[type="number"]:invalid{
+        outline: 2px solid red;
+    }
+
+    input[type="url"]:valid{
+        outline: 2px solid green;
+    }
+    input[type="url"]:invalid{
+        outline: 2px solid red;
+    }
+
+
+</style>
+
+</head>
+<body>
+    <form>
+         <!--http://www.w3schools.com/html/html_form_input_types.asp -->
+
+        	Select Color: <input type="color" name="mycolor"></br></br>
+
+            Select Date:  <input type="date" name="bday"></br></br>
+
+            Date & Time: <input type="datetime" name="mydatetime"></br></br>
+
+            Local Date & Time: <input type="datetime-local" name="mylocaldatetime"></br></br>
+
+            Email Address: <input type="email" name="mycolor" required></br></br>
+
+            Select Month: <input type="month" name="mymonth"></br></br>
+
+            Select Number: <input type="number" value="1" min="1" max="10" step="0.5" name="mynumber"></br></br>
+
+            Select Number: <input type="range" value="1" min="1" max="10" step="0.5" name="mynumber"></br></br>
+
+            Search Website: <input type="search" name="mysearch"></br></br>
+
+            Telephone Number: <input type="tel" name="mytelephone" required></br></br>
+
+            Select Time: <input type="time" name="mytime"></br></br>
+
+            Website URL: <input type="url" name="mywebsite" required></br></br>
+            
+            Select Week: <input type="week" name="myweek">
+
+
+
+    
+    </form>
+</body>
+</html>   

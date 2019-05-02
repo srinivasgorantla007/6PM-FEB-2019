@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Example of Setting Canvas Text Color and Alignment</title>
+<style type="text/css">
+	canvas{
+		border: 1px solid #000;
+	}
+</style>
+<script type="text/javascript">
+    window.onload = function(){
+        // ready canvas
+        var canvas = document.getElementById("myCanvas");
+        var context = canvas.getContext("2d");
+
+        // text properties 
+        context.font = "bold 32px Arial";
+        context.textAlign = "center";
+        context.textBaseline = "middle";
+        // filling color
+        context.fillStyle = "orange";
+        context.fillText("UI Development", 150, 100);
+    };
+</script>
+</head>
+<body>
+    <canvas id="myCanvas" width="300" height="200"></canvas>
+</body>
+</html>                                		
